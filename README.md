@@ -87,20 +87,34 @@ print("Finish!")
 
 ### (Day 12) Local scope variable 只在 def() 內，不包含 while、if、for 之類有：的判斷式內，下面範例:
 ```
-enemies = 1
+# Global variable i
+i = 1
+def run():
+    # Local variable in def xx()
+    i = 2
+run()
+print(f"i: {i}")
 
-def increase_enemies():
-    # global enemies
-    enemies = 2
-    print(f"enemies inside function: {enemies}")
+
+# Modify global variable j in def xx()
+j = 1
+def run():
+    global j
+    j = 2
+run()
+print(f"j: {j}")
 
 
-increase_enemies()
-print(f"enemies outside function: {enemies}")
+k = 1
+# Local variable ONLY in def xx(), not including if/while/for
+if True:
+    k = 2
+print(f"k: {k}")
 ```
 
 Output:
 ```
-enemies inside function: 2
-enemies outside function: 1
+i: 1
+j: 2
+k: 2
 ```
