@@ -42,47 +42,6 @@ https://ascii.co.uk/art
 
 ### (Day 6) [Reeborg's world - interesting game to practice functions](https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Hurdle%201&url=worlds%2Ftutorial_en%2Fhurdle1.json)
 
-#### Hurdle 4
-```
-def turn_right():
-    turn_left()
-    turn_left()
-    turn_left()
-
-while not at_goal():
-    if not wall_on_right():
-        turn_right()
-        move()
-    else:
-        if not wall_in_front():
-            move()
-        else:
-            turn_left()
- 
-```
-
-#### Maze
-```
-def turn_right():
-    turn_left()
-    turn_left()
-    turn_left()
-
-while front_is_clear():
-    move()
- 
-while not at_goal():
-    if right_is_clear():
-        turn_right()
-        move()
-    else:
-        if front_is_clear():
-            move()
-        else:
-            turn_left()
-    
-print("Finish!")
-```
 
 
 ### (Day 12) Local scope variable 只在 def() 內，不包含 while、if、for 之類有：的判斷式內，下面範例:
