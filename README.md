@@ -118,3 +118,5 @@ i: 1
 j: 2
 k: 2
 ```
+
+### (Day 12) [Text ASCII Art Generator](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
