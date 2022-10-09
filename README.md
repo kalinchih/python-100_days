@@ -63,13 +63,44 @@ while not at_goal():
 
 #### Maze
 ```
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+while front_is_clear():
+    move()
+ 
 while not at_goal():
-    if not wall_on_right():
+    if right_is_clear():
         turn_right()
         move()
     else:
-        if not wall_in_front():
+        if front_is_clear():
             move()
         else:
             turn_left()
+    
+print("Finish!")
+```
+
+
+### (Day 12) Local scope variable 只在 def() 內，不包含 while、if、for 之類有：的判斷式內，下面範例:
+```
+enemies = 1
+
+def increase_enemies():
+    # global enemies
+    enemies = 2
+    print(f"enemies inside function: {enemies}")
+
+
+increase_enemies()
+print(f"enemies outside function: {enemies}")
+```
+
+Output:
+```
+enemies inside function: 2
+enemies outside function: 1
 ```
