@@ -5,6 +5,7 @@
 - Official Website: https://100daysofpython.dev/
 - Replit Online Editor: https://replit.com/@appbrewery/
 - Coding Rooms: https://app.codingrooms.com/management/courses/join-by-code/4J6slZE6
+- Python Tutor - the online Python debugger: https://pythontutor.com/visualize.html#mode=edit
 
 
 ## Notes
