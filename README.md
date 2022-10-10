@@ -18,7 +18,7 @@
 - print((.1 + .1 + .1) == .3) -> False
 
 
-### (Day 3) 使用 ''' for 多行字串
+### (Day 3) 使用 ''' 或是 """ 來完成「多行字串」
 ```
 print('''
 
@@ -33,6 +33,19 @@ print('''
                      |||  |||
 
 ''')
+```
+### (Day 10) ''' 或是 """ 也可以當作 function 的描述(Docstrings)
+```
+def check_answer(item_a, item_b, choice):
+    """ This is a Docstring: Check if answer is right or not and return True/False"""
+    if str.lower(
+            choice) == "a" and item_a["follower_count"] > item_b["follower_count"]:
+        return True
+    elif str.lower(
+            choice) == "b" and item_a["follower_count"] < item_b["follower_count"]:
+        return True
+    else:
+        return False
 ```
 
 ### (Day 4) [0 的英文唸法](https://asoenglishschool.com/%E3%80%8C%E9%9B%B6%E3%80%8D%E5%85%B6%E4%BB%96%E8%8B%B1%E6%96%87%E8%AA%AA%E6%B3%95-%E8%8B%B1%E6%96%87%E5%B0%8F%E6%95%B80-001%E6%80%8E%E9%BA%BC%E8%AA%AA-%E6%AF%94%E6%95%B810-%E5%8F%AA%E8%83%BD/)
