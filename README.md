@@ -19,6 +19,7 @@
 
 
 ### (Day 3) 使用 ''' for 多行字串
+```
 print('''
 
            __  _
@@ -32,6 +33,7 @@ print('''
                      |||  |||
 
 ''')
+```
 
 ### (Day 4) [0 的英文唸法](https://asoenglishschool.com/%E3%80%8C%E9%9B%B6%E3%80%8D%E5%85%B6%E4%BB%96%E8%8B%B1%E6%96%87%E8%AA%AA%E6%B3%95-%E8%8B%B1%E6%96%87%E5%B0%8F%E6%95%B80-001%E6%80%8E%E9%BA%BC%E8%AA%AA-%E6%AF%94%E6%95%B810-%E5%8F%AA%E8%83%BD/)
 
